@@ -1,0 +1,27 @@
+pool struct is initialized at the beggining of the program and it is the struct holding the actual memory.
+
+FreeList is the member of BuddyTechnique which will be use to hold the memory.
+FreeList.Region is the struct which will hold the RAM (which at the call of the init fucntion will be 
+filled with the pool). This is not allocated yet because he wants to create a few pools so begins with 
+an empty array.
+
+Now the BuddyTechnique.Initialize is called, which initializes one FreeList for each of the block sizes 
+(this creates a problem that it needs to call malloc).
+
+Now FreeList.Initialize is called. if it is the FreeList of the largest block size, it initializes the
+beggining of the RAM with a Link that has the number of free blocks to match RAM Size/largestBlock Size.
+
+Now the example allocates 32 bytes, to try the Alloc function.
+We go from the smallest block size. check if it's bigger then the number of bytes to allocate and calles
+pool.CanAlloc()<->head!=null. if so then we call pool.Alloc().
+
+pool.Alloc() is just a stub for AllocBlock() which is another stub for Forward1().
+Next the Buddy.Alloc checks to see if we can split the block. if it can, it jumps the new blockSize
+(smaller by half) and sets the position as a link of the next FreeList.
+
+Now we free some blocks. when freeing first we see if we can coalese the freed block and choose on 
+which side (EtendRight() or ExtendLeft()). if coalesing succeded then we continue to try to coalese
+up. after were finished coalesing, we free the chunk.
+
+there is one issue with system and that even after freeing all the blocks, there is now 2
+links in the free list of largest size, one with 1 free blocks, and the rest.

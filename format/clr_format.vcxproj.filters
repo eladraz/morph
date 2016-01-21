@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="format">
+      <UniqueIdentifier>{0939b39e-f654-430c-9d1c-8d373698ab99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="format\tables">
+      <UniqueIdentifier>{f7b6bfd2-99c9-42fb-9806-7f5272ded35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="format\signatures">
+      <UniqueIdentifier>{650e29fa-fec3-4b5d-85f3-d622fb4412a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="format\pe">
+      <UniqueIdentifier>{c7cc0526-3749-4f6f-81d7-9e11892630ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CilFormatLayout.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="coreHeadersTypes.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="EncodingUtils.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="metadataHeader.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="metadataStream.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="MetadataTables.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="methodHeader.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="MSILStreams.h">
+      <Filter>format</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\AssemblyRefTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\AssemblyTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\ConstantTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\CustomAttributeTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\DeclSecurityTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\FieldTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\InterfaceImplTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\MemberRefTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\MethodSemanticsTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\MethodTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\ModuleTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\NestedClassTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\ParamTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\PropertyMapTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\PropertyTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\StandAloneSigTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\StringsTableFormatter.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\Table.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\TableFactory.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\TablesID.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\TypedefTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\TyperefTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="signatures\FieldSig.h">
+      <Filter>format\signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="signatures\LocalVarSignature.h">
+      <Filter>format\signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="signatures\MethodDefOrRefSignature.h">
+      <Filter>format\signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="pe\CilPeLayout.h">
+      <Filter>format\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\GenericParamTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\MethodSpecTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\TypeSpecTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\ClassLayoutTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\MethodImplTable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="tables\FieldRVATable.h">
+      <Filter>format\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="MSILScanInterface.h">
+      <Filter>format</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EncodingUtils.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="metadataHeader.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="metadataStream.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="MetadataTables.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="methodHeader.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="MSILStreams.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\AssemblyRefTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\AssemblyTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\ConstantTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\CustomAttributeTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\DeclSecurityTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\FieldTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\InterfaceImplTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\MemberRefTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\MethodSemanticsTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\MethodTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\ModuleTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\NestedClassTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\ParamTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\PropertyMapTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\PropertyTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\StandAloneSigTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\Table.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\TableFactory.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\TypedefTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\TyperefTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="signatures\FieldSig.cpp">
+      <Filter>format\signatures</Filter>
+    </ClCompile>
+    <ClCompile Include="signatures\LocalVarSignature.cpp">
+      <Filter>format\signatures</Filter>
+    </ClCompile>
+    <ClCompile Include="signatures\MethodDefOrRefSignature.cpp">
+      <Filter>format\signatures</Filter>
+    </ClCompile>
+    <ClCompile Include="pe\CilPeLayout.cpp">
+      <Filter>format\pe</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\GenericParamTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\MethodSpecTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\TypeSpecTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\ClassLayoutTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\MethodImplTable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="tables\FieldRVATable.cpp">
+      <Filter>format\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="MSILScanInterface.cpp">
+      <Filter>format</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

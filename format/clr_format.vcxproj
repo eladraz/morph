@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E3F7478-92B7-47FB-8F3D-7FE3F99096E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\libDebug\clr_format\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin\libDebug64\clr_format\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\objDebug\clr_format\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin\objDebug64\clr_format\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\libRelease\clr_format\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\libRelease64\clr_format\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\objRelease\clr_format\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\objRelease64\clr_format\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(XSTL_PATH)\Include;$(MORPH_PATH);$(PELIB_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;XSTL_UNICODE;_LIB;_MBCS;UNICODE;TRACED_CLR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)clr_format.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(XSTL_PATH)\Include;$(MORPH_PATH);$(PELIB_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;XSTL_UNICODE;_LIB;_MBCS;UNICODE;TRACED_CLR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)clr_format.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(XSTL_PATH)\Include;$(MORPH_PATH);$(PELIB_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;XSTL_UNICODE;_LIB;_MBCS;XSTL_UNICODE_;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)clr_format.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(XSTL_PATH)\Include;$(MORPH_PATH);$(PELIB_PATH)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;XSTL_UNICODE;_LIB;_MBCS;XSTL_UNICODE_;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)clr_format.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CilFormatLayout.h" />
+    <ClInclude Include="coreHeadersTypes.h" />
+    <ClInclude Include="EncodingUtils.h" />
+    <ClInclude Include="metadataHeader.h" />
+    <ClInclude Include="metadataStream.h" />
+    <ClInclude Include="MetadataTables.h" />
+    <ClInclude Include="methodHeader.h" />
+    <ClInclude Include="MSILScanInterface.h" />
+    <ClInclude Include="MSILStreams.h" />
+    <ClInclude Include="tables\AssemblyRefTable.h" />
+    <ClInclude Include="tables\AssemblyTable.h" />
+    <ClInclude Include="tables\ClassLayoutTable.h" />
+    <ClInclude Include="tables\ConstantTable.h" />
+    <ClInclude Include="tables\CustomAttributeTable.h" />
+    <ClInclude Include="tables\DeclSecurityTable.h" />
+    <ClInclude Include="tables\FieldRVATable.h" />
+    <ClInclude Include="tables\FieldTable.h" />
+    <ClInclude Include="tables\GenericParamTable.h" />
+    <ClInclude Include="tables\InterfaceImplTable.h" />
+    <ClInclude Include="tables\MemberRefTable.h" />
+    <ClInclude Include="tables\MethodImplTable.h" />
+    <ClInclude Include="tables\MethodSemanticsTable.h" />
+    <ClInclude Include="tables\MethodSpecTable.h" />
+    <ClInclude Include="tables\MethodTable.h" />
+    <ClInclude Include="tables\ModuleTable.h" />
+    <ClInclude Include="tables\NestedClassTable.h" />
+    <ClInclude Include="tables\ParamTable.h" />
+    <ClInclude Include="tables\PropertyMapTable.h" />
+    <ClInclude Include="tables\PropertyTable.h" />
+    <ClInclude Include="tables\StandAloneSigTable.h" />
+    <ClInclude Include="tables\StringsTableFormatter.h" />
+    <ClInclude Include="tables\Table.h" />
+    <ClInclude Include="tables\TableFactory.h" />
+    <ClInclude Include="tables\TablesID.h" />
+    <ClInclude Include="tables\TypedefTable.h" />
+    <ClInclude Include="tables\TyperefTable.h" />
+    <ClInclude Include="signatures\FieldSig.h" />
+    <ClInclude Include="signatures\LocalVarSignature.h" />
+    <ClInclude Include="signatures\MethodDefOrRefSignature.h" />
+    <ClInclude Include="pe\CilPeLayout.h" />
+    <ClInclude Include="tables\TypeSpecTable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EncodingUtils.cpp" />
+    <ClCompile Include="metadataHeader.cpp" />
+    <ClCompile Include="metadataStream.cpp" />
+    <ClCompile Include="MetadataTables.cpp" />
+    <ClCompile Include="methodHeader.cpp" />
+    <ClCompile Include="MSILScanInterface.cpp" />
+    <ClCompile Include="MSILStreams.cpp" />
+    <ClCompile Include="tables\AssemblyRefTable.cpp" />
+    <ClCompile Include="tables\AssemblyTable.cpp" />
+    <ClCompile Include="tables\ClassLayoutTable.cpp" />
+    <ClCompile Include="tables\ConstantTable.cpp" />
+    <ClCompile Include="tables\CustomAttributeTable.cpp" />
+    <ClCompile Include="tables\DeclSecurityTable.cpp" />
+    <ClCompile Include="tables\FieldRVATable.cpp" />
+    <ClCompile Include="tables\FieldTable.cpp" />
+    <ClCompile Include="tables\GenericParamTable.cpp" />
+    <ClCompile Include="tables\InterfaceImplTable.cpp" />
+    <ClCompile Include="tables\MemberRefTable.cpp" />
+    <ClCompile Include="tables\MethodImplTable.cpp" />
+    <ClCompile Include="tables\MethodSemanticsTable.cpp" />
+    <ClCompile Include="tables\MethodSpecTable.cpp" />
+    <ClCompile Include="tables\MethodTable.cpp" />
+    <ClCompile Include="tables\ModuleTable.cpp" />
+    <ClCompile Include="tables\NestedClassTable.cpp" />
+    <ClCompile Include="tables\ParamTable.cpp" />
+    <ClCompile Include="tables\PropertyMapTable.cpp" />
+    <ClCompile Include="tables\PropertyTable.cpp" />
+    <ClCompile Include="tables\StandAloneSigTable.cpp" />
+    <ClCompile Include="tables\Table.cpp" />
+    <ClCompile Include="tables\TableFactory.cpp" />
+    <ClCompile Include="tables\TypedefTable.cpp" />
+    <ClCompile Include="tables\TyperefTable.cpp" />
+    <ClCompile Include="signatures\FieldSig.cpp" />
+    <ClCompile Include="signatures\LocalVarSignature.cpp" />
+    <ClCompile Include="signatures\MethodDefOrRefSignature.cpp" />
+    <ClCompile Include="pe\CilPeLayout.cpp" />
+    <ClCompile Include="tables\TypeSpecTable.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

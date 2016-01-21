@@ -1,0 +1,74 @@
+[DebugChecksum]
+Checksum=1396248185
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[CallStack]
+ShowArgs=0
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=0
+Graph=0
+Symbiont=0
+[struct_types]
+Fmt0=tDisplay-usHeight	4	0
+Fmt1=tDisplay-usWidth	4	0
+[watch_formats]
+Fmt0={W}0:R0	3	0
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Bp0=_ "STD_CODE" "0x00002AD4" 0 0 0 0 "" 0 ""
+Count=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "C:\DriverLib\build\DriverLib.test\driverlib\adc.c" ""
+A1=_ "C:\DriverLib\build\DriverLib.test\driverlib\cpu.c" ""
+A2=_ "C:\DriverLib\build\DriverLib.test\driverlib\epi.c" ""
+A3=_ "C:\DriverLib\build\DriverLib.test\driverlib\gpio.c" ""
+A4=_ "C:\DriverLib\build\DriverLib.test\driverlib\interrupt.c" ""
+A5=_ "C:\DriverLib\build\DriverLib.test\driverlib\sysctl.c" ""
+A6=_ "C:\DriverLib\build\DriverLib.test\grlib\charmap.c" ""
+A7=_ "C:\DriverLib\build\DriverLib.test\grlib\context.c" ""
+A8=_ "C:\DriverLib\build\DriverLib.test\grlib\rectangle.c" ""
+A9=_ "C:\DriverLib\build\DriverLib.test\grlib\string.c" ""
+A10=_ "C:\cygwin\sandbox\DriverLib\build\DriverLib.test\driverlib\adc.c" ""
+A11=_ "C:\cygwin\sandbox\DriverLib\build\DriverLib.test\driverlib\interrupt.c" ""
+A12=_ "C:\cygwin\sandbox\DriverLib\build\DriverLib.test\grlib\rectangle.c" ""
+Count=13
+SuppressDialog=1

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1033924200</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\kitronix320x240x16_ssd2119_8bit.c</file>
+      <file>C:\StellarisWare\driverlib\ewarm\Exe\driverlib.a</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\thumbwheel.h</file>
+      <file>C:\StellarisWare\grlib\ewarm\Exe\grlib.a</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\set_pinout.c</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\thumbwheel.c</file>
+      <file>$PROJ_DIR$\startup_ewarm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\netcore\wrapper\wrapper_uix_stellaris.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\netcore\wrapper\wrapper.c</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\set_pinout.c</file>
+      <file>C:\StellarisWare\driverlib\timer.h</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\set_pinout.h</file>
+      <file>c:\temp\testclr\output.o</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\kitronix320x240x16_ssd2119_8bit.h</file>
+      <file>C:\StellarisWare\inc\hw_adc.h</file>
+      <file>$PROJ_DIR$\ewarm\Obj\wrapper.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\ewarm\Obj\set_pinout.pbi</file>
+      <file>$PROJ_DIR$\PatriotStellaris.icf</file>
+      <file>$PROJ_DIR$\ewarm\Obj\wrapper.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\ewarm\Obj\wrapper_uix_stellaris.o</file>
+      <file>$PROJ_DIR$\ewarm\Obj\thumbwheel.pbi</file>
+      <file>$PROJ_DIR$\ewarm\Obj\thumbwheel.o</file>
+      <file>C:\StellarisWare\driverlib\systick.h</file>
+      <file>$PROJ_DIR$\ewarm\Exe\PatriotStellaris.bin</file>
+      <file>$PROJ_DIR$\ewarm\Obj\kitronix320x240x16_ssd2119_8bit.o</file>
+      <file>C:\StellarisWare\driverlib\gpio.h</file>
+      <file>C:\StellarisWare\inc\hw_types.h</file>
+      <file>$PROJ_DIR$\ewarm\Exe\PatriotStellaris.out</file>
+      <file>$PROJ_DIR$\ewarm\Obj\PatriotStellaris.o</file>
+      <file>$PROJ_DIR$\ewarm\Obj\set_pinout.o</file>
+      <file>$PROJ_DIR$\PatriotStellaris.c</file>
+      <file>$PROJ_DIR$\ewarm\List\PatriotStellaris.map</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\thumbwheel.c</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>C:\StellarisWare\inc\hw_gpio.h</file>
+      <file>C:\StellarisWare\inc\hw_ints.h</file>
+      <file>C:\StellarisWare\driverlib\i2c.h</file>
+      <file>C:\StellarisWare\driverlib\rom.h</file>
+      <file>$PROJ_DIR$\ewarm\Obj\wrapper_uix_stellaris.pbi</file>
+      <file>C:\StellarisWare\driverlib\epi.h</file>
+      <file>C:\StellarisWare\driverlib\pin_map.h</file>
+      <file>C:\StellarisWare\driverlib\interrupt.h</file>
+      <file>C:\StellarisWare\driverlib\sysctl.h</file>
+      <file>$PROJ_DIR$\ewarm\Obj\PatriotStellaris.pbi</file>
+      <file>$PROJ_DIR$\ewarm\Obj\startup_ewarm.pbi</file>
+      <file>$PROJ_DIR$\ewarm\Obj\startup_ewarm.o</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\set_pinout.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\camerafpga.h</file>
+      <file>C:\StellarisWare\driverlib\debug.h</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\kitronix320x240x16_ssd2119_8bit.h</file>
+      <file>$PROJ_DIR$\ewarm\Obj\PatriotStellaris.pbd</file>
+      <file>C:\StellarisWare\grlib\grlib.h</file>
+      <file>C:\StellarisWare\driverlib\adc.h</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9b96\drivers\camerafpga.h</file>
+      <file>C:\StellarisWare\boards\dk-lm3s9d96\drivers\kitronix320x240x16_ssd2119_8bit.c</file>
+      <file>$PROJ_DIR$\ewarm\Obj\kitronix320x240x16_ssd2119_8bit.pbi</file>
+      <file>C:\StellarisWare\inc\hw_memmap.h</file>
+    </outputs>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9b96\drivers\kitronix320x240x16_ssd2119_8bit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38 39 61 29 28 43 45 46 10 56 13 11 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 39 61 29 28 43 45 46 10 56 13 11 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9b96\drivers\set_pinout.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 29 38 46 40 28 43 53 11 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61 29 38 46 40 28 43 53 11 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9b96\drivers\thumbwheel.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 61 29 14 57 28 45 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39 61 29 14 57 28 45 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\netcore\wrapper\wrapper_uix_stellaris.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 61 46 41 25 45 28 56 13 11 2</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 61 46 41 25 45 28 56 13 11 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\netcore\wrapper\wrapper.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 61 46 41 25 45 28 56 13 11 2</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 61 46 41 25 45 28 56 13 11 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9d96\drivers\set_pinout.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 61 29 53 43 28 44 40 46 41 50 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 30 34</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ewarm\Exe\PatriotStellaris.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 19 1 3 27 32 49 24 20 22 12 21 37 35 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\PatriotStellaris.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 46 41 56 54 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 46 41 56 51 17 54 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9d96\drivers\thumbwheel.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39 61 29 14 57 28 44 45 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ewarm\Obj\PatriotStellaris.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 60 18 48 23 15 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\StellarisWare\boards\dk-lm3s9d96\drivers\kitronix320x240x16_ssd2119_8bit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 39 61 29 28 44 43 45 46 41 56 51 17 54 50 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\PatriotStellaris.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

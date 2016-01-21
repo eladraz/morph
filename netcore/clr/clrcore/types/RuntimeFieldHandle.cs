@@ -1,0 +1,6 @@
+namespace Morph
+{
+    struct RuntimeFieldHandle
+    {
+    }
+}

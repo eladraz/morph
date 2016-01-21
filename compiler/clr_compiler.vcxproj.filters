@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ArgumentsPositions.cpp" />
+    <ClCompile Include="CallingConvention.cpp" />
+    <ClCompile Include="CompilerEngine.cpp" />
+    <ClCompile Include="CompilerFactory.cpp" />
+    <ClCompile Include="LocalPositions.cpp" />
+    <ClCompile Include="MethodBlock.cpp" />
+    <ClCompile Include="MethodCompiler.cpp" />
+    <ClCompile Include="MethodRuntimeBoundle.cpp" />
+    <ClCompile Include="TemporaryStackHolder.cpp" />
+    <ClCompile Include="opcodes\ArrayOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\ia32\IA32CompilerInterface.cpp">
+      <Filter>processors\ia32</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\arm\ARMCompilerInterface.cpp">
+      <Filter>processors\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="StackEntity.cpp" />
+    <ClCompile Include="opcodes\ObjectOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="opcodes\RegisterEvaluatorOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="opcodes\Bin32Opcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="EmitContext.cpp" />
+    <ClCompile Include="processors\c\32C.cpp">
+      <Filter>processors\C</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\arm\THUMBCompilerInterface.cpp">
+      <Filter>processors\thumb</Filter>
+    </ClCompile>
+    <ClCompile Include="opcodes\ExceptionOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="opcodes\CompilerOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="opcodes\BinaryOpcodes.cpp">
+      <Filter>opcodes</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizerCompilerInterface.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="CompilerInterface.cpp" />
+    <ClCompile Include="CompilerException.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArgumentsPositions.h" />
+    <ClInclude Include="CallingConvention.h" />
+    <ClInclude Include="CompilerEngine.h" />
+    <ClInclude Include="CompilerFactory.h" />
+    <ClInclude Include="CompilerTrace.h" />
+    <ClInclude Include="LocalPositions.h" />
+    <ClInclude Include="MethodBlock.h" />
+    <ClInclude Include="MethodCompiler.h" />
+    <ClInclude Include="MethodRuntimeBoundle.h" />
+    <ClInclude Include="TemporaryStackHolder.h" />
+    <ClInclude Include="opcodes\ArrayOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\ia32\IA32CompilerInterface.h">
+      <Filter>processors\ia32</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\arm\ARMCompilerInterface.h">
+      <Filter>processors\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="StackEntity.h" />
+    <ClInclude Include="EmitContext.h" />
+    <ClInclude Include="opcodes\ObjectOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes\RegisterEvaluatorOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes\Bin32Opcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\c\32C.h">
+      <Filter>processors\C</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\arm\THUMBCompilerInterface.h">
+      <Filter>processors\thumb</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes\ExceptionOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes\CompilerOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes\BinaryOpcodes.h">
+      <Filter>opcodes</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizerCompilerInterface.h" />
+    <ClInclude Include="OptimizerOperationCompilerInterface.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="CompilerInterface.h" />
+    <ClInclude Include="CompilerException.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opcodes">
+      <UniqueIdentifier>{3b5c788e-8060-4245-b40d-bf24fe979e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processors">
+      <UniqueIdentifier>{6da1d9df-cd8a-4dbf-b006-346d0751c1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processors\ia32">
+      <UniqueIdentifier>{7f92b413-c57c-481b-85b3-c4fc200d0ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processors\arm">
+      <UniqueIdentifier>{da7bbbe8-e6f1-4cea-936c-f711776cc69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processors\thumb">
+      <UniqueIdentifier>{9634f03e-52a1-4456-9984-ec7677bd1676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processors\C">
+      <UniqueIdentifier>{a8dd7d58-466d-4c12-b6f8-212e0eb88e79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

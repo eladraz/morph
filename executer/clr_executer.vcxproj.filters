@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="compiler">
+      <UniqueIdentifier>{7f2be104-b4dc-407b-b4d4-619885b83724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime">
+      <UniqueIdentifier>{bc9cbc98-2cab-4cae-b1ab-67a8079d40d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime\RuntimeClasses">
+      <UniqueIdentifier>{1394b509-f5aa-4441-a999-55294971d9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linker">
+      <UniqueIdentifier>{2afe8700-c349-4671-a7fc-3c2d971ffc84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="runtime\Executer.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\MethodBinder.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\ExternalModuleResolver.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\ExternalModuleTable.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="linker\LinkerFactory.cpp">
+      <Filter>Linker</Filter>
+    </ClCompile>
+    <ClCompile Include="linker\LinkerInterface.cpp">
+      <Filter>Linker</Filter>
+    </ClCompile>
+    <ClCompile Include="linker\MemoryLinker.cpp">
+      <Filter>Linker</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\BinaryGetterInterface.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\CompilerEngineThread.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\DefaultCompilerAlgorithm.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\ScanningAlgorithmInterface.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\RuntimeClasses\Runtime.cpp">
+      <Filter>runtime\RuntimeClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\RuntimeClasses\RuntimeClass.cpp">
+      <Filter>runtime\RuntimeClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\PrecompiledRepository.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="linker\ELFLinker.cpp">
+      <Filter>Linker</Filter>
+    </ClCompile>
+    <ClCompile Include="linker\FileLinker.cpp">
+      <Filter>Linker</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="runtime\Executer.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\MethodBinder.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\ExternalModuleResolver.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\ExternalModuleTable.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuterTrace.h" />
+    <ClInclude Include="linker\LinkerFactory.h">
+      <Filter>Linker</Filter>
+    </ClInclude>
+    <ClInclude Include="linker\LinkerInterface.h">
+      <Filter>Linker</Filter>
+    </ClInclude>
+    <ClInclude Include="linker\MemoryLinker.h">
+      <Filter>Linker</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\BinaryGetterInterface.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\CompilerEngineThread.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\DefaultCompilerAlgorithm.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\ScanningAlgorithmInterface.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodIndex.h" />
+    <ClInclude Include="compiler\CompilerNotifierInterface.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\RuntimeClasses\RuntimeClass.h">
+      <Filter>runtime\RuntimeClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\RuntimeClasses\Runtime.h">
+      <Filter>runtime\RuntimeClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\PrecompiledRepository.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="linker\ELFLinker.h">
+      <Filter>Linker</Filter>
+    </ClInclude>
+    <ClInclude Include="linker\FileLinker.h">
+      <Filter>Linker</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

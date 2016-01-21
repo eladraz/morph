@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="runnable">
+      <UniqueIdentifier>{8eb86ce5-1ccb-4a83-8db8-7d9433716d01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runnable\CustomAttribute">
+      <UniqueIdentifier>{e1b01960-517c-4c91-ab03-d36ceb150c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runnable\ClrResolver">
+      <UniqueIdentifier>{fb7c72b3-cfb7-48f7-91b0-bfb32e13276c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Apartment.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="ApartmentFactory.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodRunnable.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="StringReader.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="TypedefRepository.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="TypesNameRepository.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameworkMethods.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalContext.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="CorlibNames.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrResolver.cpp">
+      <Filter>runnable\ClrResolver</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomAttribute.cpp">
+      <Filter>runnable\CustomAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomAttributeArgument.cpp">
+      <Filter>runnable\CustomAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="StringRepository.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodSignature.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+    <ClCompile Include="ResolverInterface.cpp">
+      <Filter>runnable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Apartment.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="ApartmentFactory.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodRunnable.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="StringReader.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="TypedefRepository.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="TypesNameRepository.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameworkMethods.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="RunnableTrace.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalContext.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="CorlibNames.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryLayoutInterface.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="ResolverInterface.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrResolver.h">
+      <Filter>runnable\ClrResolver</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomAttribute.h">
+      <Filter>runnable\CustomAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomAttributeArgument.h">
+      <Filter>runnable\CustomAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="StringRepository.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodSignature.h">
+      <Filter>runnable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stack.inl">
+      <Filter>runnable</Filter>
+    </None>
+  </ItemGroup>
+</Project>
