@@ -1,0 +1,58 @@
+sudo: required
+dist: trusty
+
+env:
+  global:
+  # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+  #   via the "travis encrypt" command using the project repo's public key
+   - secure: "ZcLR6swiB1I0J1+fBC8dIRAlKNs7AFMfmZYbrAyZmCrNYDIz8KQos05qQbppGs0dLVU6kxdzV6Mik9hbLsuTCpLY3WYzeT9OrQ8EmVEwCsI94tn3Wkrrl0/4E49sPzXNZ0Hx6unHUtRaFwjIUbjNCKreAMbMidEGtg6jwQsG83VkOg4hkIP8TfExchbimoSv1nFilL24NLGYt/WtQpgvr1YrlHEgVq35fENW/t+PRu//ooz16Xq0R99dHzkpiBJ9Z5jh4WZzcL9RvieA1AVAcVYmXxy9rkpzCQ6xvZYjUQ8398dlmSSO37cwruyqfMdzchb7HE/xsU55tIkJmooKSZmolBXzsAKCBjaiApup6H5JbAgr2VKMNbveuHR/hf9mZKRXKr/I0dCppXvI0ZrEVd7VKQN3nOqbiBuBZYWZ8UKWxGaTcJ6szCmy63P07hO/YL9pBQD6LHOgp5tEc/qV/B16UJhF7yM18IlyWJOFuwMhyKAZJQtsk6JxVMuy3dObaLdySHNMhPkvwBJm862Xpw1aD+23q9qn4wmEot9l+8inRiDacXBBYtRLp5jhNp3SETmT5FmQdMWT1z6U7Pm2UqOodQOhNQsX7JVzPqzXBZKYea1+oWYCqI7bgHfpmnY+HoiLQd1mVH9JWF1CjNR4jrWZD8ZPExYTBscGz7HnKVk="
+
+before_install:
+  - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
+language: c
+
+compiler:
+  - clang
+  - gcc
+
+before_install:
+  - sudo apt-get install automake autoconf libtool build-essential git-core cmake
+  - pushd . && cd $HOME
+  - git clone https://github.com/eladraz/xStl
+  - git clone https://github.com/eladraz/pe
+  - git clone https://github.com/eladraz/elf
+  - git clone https://github.com/eladraz/dismount
+  - export XSTL_PATH=`pwd`/xStl
+  - export PELIB_PATH=`pwd`/pe
+  - export ELFLIB_PATH=`pwd`/elf
+  - export DISMOUNT_PATH=`pwd`/dismount
+  - cd $XSTL_PATH && mkdir -p build && cd build
+  - cmake ..
+  - make -j 4
+  - cd $PELIB_PATH && mkdir -p build && cd build
+  - cmake ..
+  - make -j 4
+  - cd $ELFLIB_PATH && mkdir -p build && cd build
+  - cmake ..
+  - make -j 4
+  - cd $DISMOUNT_PATH && mkdir -p build && cd build
+  - cmake ..
+  - make -j 4
+  - popd
+
+script:
+  - mkdir -p build
+  - cd build
+  - cmake ..
+  - make -j 4
+
+addons:
+  coverity_scan:
+    project:
+      name: "eladraz/morph"
+      description: "Morph compiler builds from Travis-CI"
+    notification_email: e@eladraz.com
+    build_command_prepend: "mkdir -p build && cd build && cmake .."
+    build_command:  "make -j 4"
+    branch_pattern: master

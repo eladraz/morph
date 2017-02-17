@@ -1,4 +1,6 @@
 ![unmaintained](http://img.shields.io/badge/status-unmaintained-red.png)
+[![build status](https://travis-ci.org/eladraz/morph.svg?branch=master)](https://travis-ci.org/eladraz/morph/)
+[![coverity status](https://scan.coverity.com/projects/11800/badge.svg)](https://scan.coverity.com/projects/eladraz-morph)
 
 Morph .NET Compiler
 ===================
@@ -102,7 +104,7 @@ In order to pass variable arguments to [Visual Studio](http://www.visualstudio.c
 >>    * Click an existing variable, and then click *Delete* to remove it.
 
 In order to build the Morph compiler, open `Clr.sln` solution project with [Visual Studio](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx).
-In Visual Studio's configuration manager, choose the desired build configuration (Win32/x64/Debug/Release) and build `clr_console`. 
+In Visual Studio's configuration manager, choose the desired build configuration (Win32/x64/Debug/Release) and build `clr_console`.
 
 
 Linux
@@ -224,7 +226,7 @@ The output file is `output.o`.
 
 For x86 32-bit Systems
 ----------------------
-The mcc `-o x86-mem` will link and run the output file from within the memory using the `executer\runtime\RuntimeClasses` library. 
+The mcc `-o x86-mem` will link and run the output file from within the memory using the `executer\runtime\RuntimeClasses` library.
 
 Linking
 =======
